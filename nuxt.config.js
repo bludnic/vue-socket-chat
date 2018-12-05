@@ -14,6 +14,12 @@ module.exports = {
     ]
   },
   /*
+  ** Global CSS
+  */
+  css: [
+    '~/assets/stylus/app.styl'
+  ],
+  /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
@@ -34,6 +40,12 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  /*
+  ** Headers of the page
+  */
+  plugins: [
+    '~/plugins/vuetify'
+  ]
 }
 
