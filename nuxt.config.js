@@ -48,6 +48,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/vuetify'
-  ]
+  ],
+  serverMiddleware: ['~/api/index.js']
 }
 
