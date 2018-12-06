@@ -23,6 +23,12 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => {
     console.log('user disconnected')
   })
+
+  socket.on('chat message', (message) => {
+    console.log('[message]', message)
+
+    io.emit('chat message', message)
+  })
 })
 
 // Export the server middleware

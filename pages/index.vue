@@ -59,21 +59,6 @@ import VChat from '~/components/VChat/VChat'
 import VChatForm from '~/components/VChat/VChatForm'
 
 export default {
-  created () {
-    const io = socket('http://localhost:3000', {
-      path: '/api/socket.io'
-    })
-
-    io.on('connect', () => {
-      console.log('client connect')
-    })
-    io.on('event', () => {
-      console.log('client event')
-    })
-    io.on('disconnect', () => {
-      console.log('client disconnect')
-    })
-  },
   mounted () {
     this.loading = true
 
