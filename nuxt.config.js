@@ -10,14 +10,16 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons' }
     ]
   },
   /*
   ** Global CSS
   */
   css: [
-    '~/assets/stylus/app.styl'
+    '~/assets/stylus/app.styl',
+    '@mdi/font/css/materialdesignicons.min.css'
   ],
   /*
   ** Customize the progress bar color
